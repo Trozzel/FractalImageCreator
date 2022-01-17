@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/george/Documents/Cpp/AdvancedCpp/build",
+  "command": "/usr/bin/c++   -I/home/george/Documents/Cpp/AdvancedCpp/include  -Wno-pragma-packk   -o CMakeFiles/fractalImages.dir/src/Bitmap.cpp.o -c /home/george/Documents/Cpp/AdvancedCpp/src/Bitmap.cpp",
+  "file": "/home/george/Documents/Cpp/AdvancedCpp/src/Bitmap.cpp"
+},
+{
+  "directory": "/home/george/Documents/Cpp/AdvancedCpp/build",
+  "command": "/usr/bin/c++   -I/home/george/Documents/Cpp/AdvancedCpp/include  -Wno-pragma-packk   -o CMakeFiles/fractalImages.dir/src/main.cpp.o -c /home/george/Documents/Cpp/AdvancedCpp/src/main.cpp",
+  "file": "/home/george/Documents/Cpp/AdvancedCpp/src/main.cpp"
+}
+]

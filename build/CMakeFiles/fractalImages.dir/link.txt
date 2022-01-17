@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wno-pragma-packk   CMakeFiles/fractalImages.dir/src/Bitmap.cpp.o CMakeFiles/fractalImages.dir/src/main.cpp.o  -o fractalImages 
