@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/george/Documents/Cpp/AdvancedCpp
+CMAKE_SOURCE_DIR = /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/george/Documents/Cpp/AdvancedCpp/build
+CMAKE_BINARY_DIR = /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/fractalImages.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/fractalImages.dir/flags.make
 
 CMakeFiles/fractalImages.dir/src/Bitmap.cpp.o: CMakeFiles/fractalImages.dir/flags.make
 CMakeFiles/fractalImages.dir/src/Bitmap.cpp.o: ../src/Bitmap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/george/Documents/Cpp/AdvancedCpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fractalImages.dir/src/Bitmap.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fractalImages.dir/src/Bitmap.cpp.o -c /home/george/Documents/Cpp/AdvancedCpp/src/Bitmap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fractalImages.dir/src/Bitmap.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fractalImages.dir/src/Bitmap.cpp.o -c /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/Bitmap.cpp
 
 CMakeFiles/fractalImages.dir/src/Bitmap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fractalImages.dir/src/Bitmap.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/george/Documents/Cpp/AdvancedCpp/src/Bitmap.cpp > CMakeFiles/fractalImages.dir/src/Bitmap.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/Bitmap.cpp > CMakeFiles/fractalImages.dir/src/Bitmap.cpp.i
 
 CMakeFiles/fractalImages.dir/src/Bitmap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fractalImages.dir/src/Bitmap.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/george/Documents/Cpp/AdvancedCpp/src/Bitmap.cpp -o CMakeFiles/fractalImages.dir/src/Bitmap.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/Bitmap.cpp -o CMakeFiles/fractalImages.dir/src/Bitmap.cpp.s
 
 CMakeFiles/fractalImages.dir/src/main.cpp.o: CMakeFiles/fractalImages.dir/flags.make
 CMakeFiles/fractalImages.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/george/Documents/Cpp/AdvancedCpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/fractalImages.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fractalImages.dir/src/main.cpp.o -c /home/george/Documents/Cpp/AdvancedCpp/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/fractalImages.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fractalImages.dir/src/main.cpp.o -c /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/main.cpp
 
 CMakeFiles/fractalImages.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fractalImages.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/george/Documents/Cpp/AdvancedCpp/src/main.cpp > CMakeFiles/fractalImages.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/main.cpp > CMakeFiles/fractalImages.dir/src/main.cpp.i
 
 CMakeFiles/fractalImages.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fractalImages.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/george/Documents/Cpp/AdvancedCpp/src/main.cpp -o CMakeFiles/fractalImages.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/main.cpp -o CMakeFiles/fractalImages.dir/src/main.cpp.s
 
 # Object files for target fractalImages
 fractalImages_OBJECTS = \
@@ -95,7 +95,7 @@ fractalImages: CMakeFiles/fractalImages.dir/src/Bitmap.cpp.o
 fractalImages: CMakeFiles/fractalImages.dir/src/main.cpp.o
 fractalImages: CMakeFiles/fractalImages.dir/build.make
 fractalImages: CMakeFiles/fractalImages.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/george/Documents/Cpp/AdvancedCpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable fractalImages"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable fractalImages"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fractalImages.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/fractalImages.dir/clean:
 .PHONY : CMakeFiles/fractalImages.dir/clean
 
 CMakeFiles/fractalImages.dir/depend:
-	cd /home/george/Documents/Cpp/AdvancedCpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/george/Documents/Cpp/AdvancedCpp /home/george/Documents/Cpp/AdvancedCpp /home/george/Documents/Cpp/AdvancedCpp/build /home/george/Documents/Cpp/AdvancedCpp/build /home/george/Documents/Cpp/AdvancedCpp/build/CMakeFiles/fractalImages.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/build /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/build /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/build/CMakeFiles/fractalImages.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fractalImages.dir/depend
 

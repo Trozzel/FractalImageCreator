@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/george/Documents/Cpp/AdvancedCpp/src/Bitmap.cpp" "/home/george/Documents/Cpp/AdvancedCpp/build/CMakeFiles/fractalImages.dir/src/Bitmap.cpp.o"
-  "/home/george/Documents/Cpp/AdvancedCpp/src/main.cpp" "/home/george/Documents/Cpp/AdvancedCpp/build/CMakeFiles/fractalImages.dir/src/main.cpp.o"
+  "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/Bitmap.cpp" "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/build/CMakeFiles/fractalImages.dir/src/Bitmap.cpp.o"
+  "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/main.cpp" "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/build/CMakeFiles/fractalImages.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

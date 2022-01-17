@@ -5,9 +5,9 @@ CMakeFiles/fractalImages.dir/src/Bitmap.cpp.o
  ../include/Bitmap.h
  ../include/BitmapFileHeader.h
  ../include/BitmapInfoHeader.h
- /home/george/Documents/Cpp/AdvancedCpp/src/Bitmap.cpp
+ /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/Bitmap.cpp
 CMakeFiles/fractalImages.dir/src/main.cpp.o
  ../include/Bitmap.h
  ../include/BitmapFileHeader.h
  ../include/BitmapInfoHeader.h
- /home/george/Documents/Cpp/AdvancedCpp/src/main.cpp
+ /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/main.cpp

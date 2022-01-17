@@ -6,5 +6,5 @@ CXX_FLAGS = -Wno-pragma-packk
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/george/Documents/Cpp/AdvancedCpp/include 
+CXX_INCLUDES = -I/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/include 
 
