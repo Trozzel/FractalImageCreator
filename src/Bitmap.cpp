@@ -12,7 +12,6 @@ using namespace std;
 Bitmap::Bitmap(int width, int height) : _width(width), _height(height),
 	_pPixels {new uint8_t[height * width * 3]{}}
 {
-
 }
 
 // WRITE TO FILE
@@ -37,7 +36,7 @@ bool Bitmap::write(const string& fileName)
 		ofs.write( (char*)&fileHeader, sizeof(fileHeader));
 		ofs.write( (char*)&infoHeader, sizeof(infoHeader));
 		ofs.write( (char*)_pPixels.get(), 
-				_height * _width * 3);
+				_height * _width * 3 );
 		ofs.close();
 	}
 
@@ -50,4 +49,8 @@ void Bitmap::setPixel(int x, int y, uint8_t r, uint8_t g, uint8_t b)
 {
 	uint8_t* pPixel = _pPixels.get(); // GET THE PIXEL AT [0,0][0,0,0]
 	pPixel += 3 * ( y * _width + x );
+	
+	*pPixel       = b;
+	*(pPixel + 1) = g;
+	*(pPixel + 2) = r;
 }
