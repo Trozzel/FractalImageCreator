@@ -1,0 +1,6 @@
+.CMake*
+.cache*
+build/*
+*.swn
+*.swo
+*.swp

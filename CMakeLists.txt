@@ -10,7 +10,8 @@ IF( EXISTS "${CMAKE_CURRENT_BINARY_DIR}/compile_commands.json" )
   )
 ENDIF()
 
-set(CMAKE_CXX_FLAGS "-Wno-pragma-packk")
+#set(CMAKE_CXX_FLAGS "-Wno-pragma-pack")
+set(CMAKE_CXX_STANDARD 17)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 

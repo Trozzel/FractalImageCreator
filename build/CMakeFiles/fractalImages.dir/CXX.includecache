@@ -24,27 +24,27 @@ cstdint
 cstdint
 -
 
-/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/Bitmap.cpp
+/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/Bitmap.cpp
 iostream
 -
 stdexcept
 -
 Bitmap.h
-/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/Bitmap.h
+/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/Bitmap.h
 BitmapFileHeader.h
-/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/BitmapFileHeader.h
+/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/BitmapFileHeader.h
 BitmapInfoHeader.h
-/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/BitmapInfoHeader.h
+/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/BitmapInfoHeader.h
 
-/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/main.cpp
+/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/main.cpp
 iostream
 -
 string
 -
 Bitmap.h
-/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/Bitmap.h
+/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/Bitmap.h
 BitmapInfoHeader.h
-/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/BitmapInfoHeader.h
+/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/BitmapInfoHeader.h
 BitmapFileHeader.h
-/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/BitmapFileHeader.h
+/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/BitmapFileHeader.h
 

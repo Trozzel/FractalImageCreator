@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/Bitmap.cpp" "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/build/CMakeFiles/fractalImages.dir/src/Bitmap.cpp.o"
-  "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/main.cpp" "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/build/CMakeFiles/fractalImages.dir/src/main.cpp.o"
+  "/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/Bitmap.cpp" "/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/build/CMakeFiles/fractalImages.dir/src/Bitmap.cpp.o"
+  "/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/main.cpp" "/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/build/CMakeFiles/fractalImages.dir/src/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
