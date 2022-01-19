@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 
+#include "Mandelbrot.hpp"
 #include "Bitmap.h"
 #include "BitmapInfoHeader.h"
 #include "BitmapFileHeader.h"
@@ -25,8 +26,17 @@ int main()
 			double xFractal = (x - static_cast<double>(WIDTH)  / 2) * 2./WIDTH;
 			double yFractal = (y - static_cast<double>(HEIGHT) / 2) * 2./HEIGHT;
 
-			min = (min > yFractal) ? yFractal : min;
-			max = (max < yFractal) ? yFractal : max;
+			int numIter = Mandelbrot::getIterations(xFractal, yFractal);
+
+			//cout << "Num iter: " << numIter << endl;
+
+			uint8_t red {static_cast<uint8_t>(
+					256 * static_cast<double>(numIter) / Mandelbrot::MAX_ITERATIONS)};
+
+			bitmap.setPixel(x,y, 0, 0,red);
+
+			min = (red < min) ? red : min;
+			max = (red > max) ? red : max;
 		}
 	}
 	 cout << "MIN: " << min << ", MAX: " << max << endl;

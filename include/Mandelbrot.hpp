@@ -6,7 +6,7 @@ class Mandelbrot
 public:
 	static const int MAX_ITERATIONS { 1000 };
 public:
-	static int getIterations(int x, int y);
+	static int getIterations(double x, double y);
 };
 
 #endif // __MANDELBROT_HPP__
