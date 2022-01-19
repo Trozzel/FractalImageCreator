@@ -1,10 +1,6 @@
 .CMake*
 .cache*
 build/*
-<<<<<<< HEAD
-*.swn
-*.swo
-*.swp
-=======
-*.sw* 
->>>>>>> 0ccec1340c37395a8be70dd20f0df574dcd07060
+*.sw*
+*.sw*
+*.sw*

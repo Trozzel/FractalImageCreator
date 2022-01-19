@@ -7,7 +7,7 @@
 
 using namespace std;
 
-const string baseDir { "../images/" };
+const     string baseDir { "../images/" };
 constexpr int WIDTH { 800 }, HEIGHT { 600 };
 
 int main()
@@ -16,16 +16,20 @@ int main()
 
 	Bitmap bitmap(WIDTH, HEIGHT);
 
-	for (int i{0}; i<256; ++i) {
-		for (int j{0}; j<HEIGHT; ++j) {
-			bitmap.setPixel(i, j, i, 0, 0);
+	// INITIATE TO VALUES 
+	double min {  999999 };
+	double max { -999999 };
+
+	for (int x{0}; x<WIDTH; ++x) {
+		for (int y{0}; y<HEIGHT; ++y) {
+			double xFractal = (x - static_cast<double>(WIDTH)  / 2) * 2./WIDTH;
+			double yFractal = (y - static_cast<double>(HEIGHT) / 2) * 2./HEIGHT;
+
+			min = (min > yFractal) ? yFractal : min;
+			max = (max < yFractal) ? yFractal : max;
 		}
 	}
-	for (int i{256}; i< 2 * 256; ++i) {
-		for (int j{0}; j<HEIGHT; ++j) {
-			bitmap.setPixel(i, j,511-i, 0, 0);
-		}
-	}
+	 cout << "MIN: " << min << ", MAX: " << max << endl;
 
 	bitmap.write(baseDir + fileName);
 	cout << "Finished." << endl;
