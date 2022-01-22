@@ -1,7 +1,0 @@
-.CMake*
-.cache*
-build/*
-*.sw* 
-.chache*
-*.swn
-.gitignore

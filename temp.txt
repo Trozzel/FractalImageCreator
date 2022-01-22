@@ -1,0 +1,10 @@
+.CMake*
+.cache*
+build/*
+*.sw*
+*.sw*
+*.sw*
+*.gitignore
+*.iml
+*.xml
+
