@@ -74,7 +74,11 @@ int main()
 
 	bitmap.write(baseDir + fileName);
 
-	system("open ../images/allBlack.bmp");
+	#if defined __APPLE__
+		system("open ../images/allBlack.bmp");
+	#elif defined __linux__
+		system("mimeopen ../images/allBlack.bmp");
+	#endif
 
 	cout << "Finished." << endl;
 }
