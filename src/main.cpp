@@ -1,10 +1,12 @@
 #include <memory>
+#include <cmath>
 #include <numeric>
 #include <cmath>
 #include <iostream>
 #include <string>
 #include <memory>
 
+#include "ZoomList.hpp"
 #include "Mandelbrot.hpp"
 #include "PixelInfo.hpp"
 #include "Bitmap.h"
@@ -55,17 +57,19 @@ int main()
 
 			int iterations = fractal[y * WIDTH + x];
 
-			//uint8_t color {static_cast<uint8_t>(
-			//		256 * static_cast<double>(numIter) / Mandelbrot::MAX_ITERATIONS)};
-
-			double hue {};
-
-			for (int i{}; i<=iterations; ++i)
-				hue += ((double)histogram[i]) / total;
-
 			uint8_t red{};
-			uint8_t green = hue * 255;
+			uint8_t green{};
 			uint8_t blue{};
+
+			if (iterations != Mandelbrot::MAX_ITERATIONS) {
+
+				double hue {};
+
+				for (int i{}; i<=iterations; ++i)
+					hue += ((double)histogram[i]) / total;
+
+				green = pow(255, hue);
+			}
 			
 			bitmap.setPixel(x, y, red, green, blue);
 		}
