@@ -1,3 +1,4 @@
+#include <ctime>
 #include <memory>
 #include <cmath>
 #include <numeric>
@@ -20,9 +21,16 @@ constexpr int WIDTH { 800 }, HEIGHT { 600 };
 
 int main()
 {
+	time_t start = clock();
+
 	const string fileName { "allBlack.bmp" };
 
 	Bitmap bitmap(WIDTH, HEIGHT);
+
+	ZoomList zoomList(WIDTH, HEIGHT);
+	zoomList.add(Zoom(WIDTH/2, HEIGHT/2, 4.0 / WIDTH));
+	zoomList.add(Zoom(295, HEIGHT - 202, 0.1));
+	zoomList.add(Zoom(312, HEIGHT - 304, 0.1));
 
 	// INITIATE TO VALUES 
 	double min {  999999 };
@@ -33,8 +41,11 @@ int main()
 	
 	for (int x{0}; x<WIDTH; ++x) {
 		for (int y{0}; y<HEIGHT; ++y) {
-			double xFractal = (x - (double)WIDTH  / 2 - 200 ) * 2. / HEIGHT;
-			double yFractal = (y - (double)HEIGHT / 2) * 2.0 / HEIGHT;
+			pair<double, double> xy = zoomList.doZoom(x, y);
+			double xFractal = xy.first;
+			double yFractal = xy.second;
+			//double xFractal = (x - (double)WIDTH  / 2 - 200 ) * 2. / HEIGHT;
+			//double yFractal = (y - (double)HEIGHT / 2) * 2.0 / HEIGHT;
 
 			int iterations = Mandelbrot::getIterations(xFractal, yFractal);
 			if (iterations != Mandelbrot::MAX_ITERATIONS)
@@ -78,11 +89,19 @@ int main()
 
 	bitmap.write(baseDir + fileName);
 
+	string openImgCmd {};
+
 	#if defined __APPLE__
-		system("open ../images/allBlack.bmp");
+		openImgCmd = "open ../images/allBlack.bmp";
 	#elif defined __linux__
-		system("mimeopen ../images/allBlack.bmp");
+		openImgCmd = "mimeopen ../images/allBlack.bmp";
 	#endif
 
-	cout << "Finished." << endl;
+	time_t finish = clock();
+	time_t total_time = (finish - start);
+	cout << "Elapsed time: " << (double)total_time / CLOCKS_PER_SEC << endl;
+
+	system(openImgCmd.c_str());
+
+	//cout << "Finished." << endl;
 }
