@@ -10,6 +10,8 @@ class ZoomList
 private:
 	double _xCenter;
 	double _yCenter;
+	double _scale;
+
 	int _width{};
 	int _height{};
 
