@@ -1,27 +1,27 @@
 [
 {
-  "directory": "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/build",
-  "command": "/usr/bin/c++   -I/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/fractalImages.dir/src/Bitmap.cpp.o -c /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/Bitmap.cpp",
-  "file": "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/Bitmap.cpp"
+  "directory": "/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/include  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -std=gnu++17 -o CMakeFiles/fractalImages.dir/src/Bitmap.cpp.o -c /Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/Bitmap.cpp",
+  "file": "/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/Bitmap.cpp"
 },
 {
-  "directory": "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/build",
-  "command": "/usr/bin/c++   -I/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/fractalImages.dir/src/Mandelbrot.cpp.o -c /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/Mandelbrot.cpp",
-  "file": "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/Mandelbrot.cpp"
+  "directory": "/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/include  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -std=gnu++17 -o CMakeFiles/fractalImages.dir/src/Mandelbrot.cpp.o -c /Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/Mandelbrot.cpp",
+  "file": "/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/Mandelbrot.cpp"
 },
 {
-  "directory": "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/build",
-  "command": "/usr/bin/c++   -I/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/fractalImages.dir/src/PixelInfo.cpp.o -c /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/PixelInfo.cpp",
-  "file": "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/PixelInfo.cpp"
+  "directory": "/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/include  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -std=gnu++17 -o CMakeFiles/fractalImages.dir/src/PixelInfo.cpp.o -c /Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/PixelInfo.cpp",
+  "file": "/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/PixelInfo.cpp"
 },
 {
-  "directory": "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/build",
-  "command": "/usr/bin/c++   -I/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/fractalImages.dir/src/ZoomList.cpp.o -c /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/ZoomList.cpp",
-  "file": "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/ZoomList.cpp"
+  "directory": "/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/include  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -std=gnu++17 -o CMakeFiles/fractalImages.dir/src/ZoomList.cpp.o -c /Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/ZoomList.cpp",
+  "file": "/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/ZoomList.cpp"
 },
 {
-  "directory": "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/build",
-  "command": "/usr/bin/c++   -I/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/fractalImages.dir/src/main.cpp.o -c /home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/main.cpp",
-  "file": "/home/george/Documents/Cpp/AdvancedCpp/FractalImageCreator/src/main.cpp"
+  "directory": "/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/include  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -std=gnu++17 -o CMakeFiles/fractalImages.dir/src/main.cpp.o -c /Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/main.cpp",
+  "file": "/Users/jorge/Cpp/Learning/UdemyAdvanced/FractalImageCreator/src/main.cpp"
 }
 ]
