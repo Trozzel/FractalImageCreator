@@ -20,8 +20,8 @@ FractalCreator::FractalCreator(int width, int height) :
 	_width(width), _height(height), 
 	_histogram{ new int[Mandelbrot::MAX_ITERATIONS + 1]{} },
 	_fractal  { new int[_width * _height]{} },
-	_bitmap   {_width, _height },
-	_zoomList {_width, _height }
+	_bitmap   { _width, _height },
+	_zoomList { _width, _height }
 {
 	// INITIATE ZOOM TO CENTER
 	addZoom(Zoom(_width/2, _height/2, 4.0 / _width));
