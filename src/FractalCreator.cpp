@@ -4,6 +4,16 @@
 
 using namespace std;
 
+// RUN
+void FractalCreator::run(const string& name)
+{
+	calculateIteration();
+	calculateTotalIterations();
+	drawFractal();
+
+	writeBitmap(name);
+}
+
 // CTOR
 /******************************************************************************/
 FractalCreator::FractalCreator(int width, int height) : 
@@ -13,13 +23,8 @@ FractalCreator::FractalCreator(int width, int height) :
 	_bitmap   {_width, _height },
 	_zoomList {_width, _height }
 {
+	// INITIATE ZOOM TO CENTER
 	addZoom(Zoom(_width/2, _height/2, 4.0 / _width));
-}
-
-// DTOR
-/******************************************************************************/
-FractalCreator::~FractalCreator()
-{
 }
 
 // CALCULATE ITERATION
@@ -47,6 +52,10 @@ void FractalCreator::calculateIteration()
 void FractalCreator::drawFractal()
 /******************************************************************************/
 {
+	Rgb rgbStart{0,0,  0};
+	Rgb rgbEnd  {0,255,0};
+	Rgb rgbDiff = rgbEnd - rgbStart;
+
 	for (int x{0}; x<_width; ++x) {
 		for (int y{0}; y<_height; ++y) {
 
@@ -63,7 +72,10 @@ void FractalCreator::drawFractal()
 				for (int i{}; i<=iterations; ++i)
 					hue += ((double)_histogram[i]) / _total;
 
-				green = hue * 255;
+				red   = rgbStart.red()   + rgbDiff.red()   * hue;
+				green = rgbStart.green() + rgbDiff.green() * hue;
+				blue  = rgbStart.blue()  + rgbDiff.blue()  * hue;
+				//green = hue * 255;
 			}
 			
 			_bitmap.setPixel(x, y, red, green, blue);

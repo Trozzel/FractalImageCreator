@@ -7,6 +7,7 @@
 #include "ZoomList.hpp"
 #include "Mandelbrot.hpp"
 #include "Bitmap.h"
+#include "Rgb.hpp"
 
 class FractalCreator
 {
@@ -21,15 +22,20 @@ private:
 	Bitmap                 _bitmap;
 	ZoomList               _zoomList;
 
-public:
-	FractalCreator(int width, int height);
-	virtual ~FractalCreator();
+private:
 
 	void calculateIteration();
 	void calculateTotalIterations();
 	void drawFractal();
+
+public:
+	FractalCreator(int width, int height);
+	virtual ~FractalCreator() = default;
+
 	void addZoom(const Zoom& zoom);
 	void writeBitmap(const std::string& name);
+
+	void run(const std::string& name);
 };
 
 #endif // __FRACTALCREATOR_HPP__

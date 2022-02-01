@@ -8,11 +8,12 @@
 #include <memory>
 
 #include "FractalCreator.hpp"
+#include "Rgb.hpp"
 
 using namespace std;
 
 const     string baseDir { "../images/" };
-constexpr int _width { 800 }, _height { 600 };
+constexpr int WIDTH { 800 }, HEIGHT { 600 };
 
 int main()
 {
@@ -20,20 +21,12 @@ int main()
 
 	FractalCreator fractalCreator(800, 600);
 
+	fractalCreator.addZoom(Zoom(295,  202, 0.1));
+	fractalCreator.addZoom(Zoom(312,  304, 0.1));
+
 	const string fileName { "allBlack.bmp" };
 
-	fractalCreator.addZoom(Zoom(295, _height - 202, 0.1));
-	fractalCreator.addZoom(Zoom(312, _height - 304, 0.1));
-	fractalCreator.calculateIteration();
-	fractalCreator.calculateTotalIterations();
-	fractalCreator.drawFractal();
-
-	// INITIATE TO VALUES 
-	double min {  999999 };
-	double max { -999999 };
-
-
-	fractalCreator.writeBitmap(baseDir + fileName);
+	fractalCreator.run(baseDir + fileName);
 
 	string openImgCmd {};
 
@@ -48,6 +41,4 @@ int main()
 	cout << "Elapsed time: " << (double)total_time / CLOCKS_PER_SEC << endl;
 
 	system(openImgCmd.c_str());
-
-	//cout << "Finished." << endl;
 }
