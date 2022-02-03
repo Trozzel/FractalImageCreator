@@ -3,6 +3,7 @@
 
 #include <string>
 #include <memory>
+#include <vector>
 
 #include "ZoomList.hpp"
 #include "Mandelbrot.hpp"
@@ -16,6 +17,9 @@ private:
 	int _height;
 
 	int _total { 0 };
+
+	std::vector<int> _ranges;
+	std::vector<Rgb> _colors;
 
 	std::unique_ptr<int[]> _histogram;
 	std::unique_ptr<int[]> _fractal;  
@@ -33,6 +37,7 @@ public:
 	virtual ~FractalCreator() = default;
 
 	void addZoom(const Zoom& zoom);
+	void addRange(double range, const Rgb& rbg);
 	void writeBitmap(const std::string& name);
 
 	void run(const std::string& name);

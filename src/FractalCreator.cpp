@@ -52,8 +52,8 @@ void FractalCreator::calculateIteration()
 void FractalCreator::drawFractal()
 /******************************************************************************/
 {
-	Rgb rgbStart{0,0,  0};
-	Rgb rgbEnd  {0,255,0};
+	Rgb rgbStart{0,0,0};
+	Rgb rgbEnd  {0,0,255};
 	Rgb rgbDiff = rgbEnd - rgbStart;
 
 	for (int x{0}; x<_width; ++x) {
@@ -100,6 +100,14 @@ void FractalCreator::calculateTotalIterations()
 void FractalCreator::addZoom(const Zoom& zoom)
 {
 	_zoomList.add(zoom);
+}
+
+// ADD COLOR RANGE
+/******************************************************************************/
+void FractalCreator::addRange(double range, const Rgb& rgb)
+{
+	_ranges.push_back(range * Mandelbrot::MAX_ITERATIONS);
+	_colors.push_back(rgb);
 }
 
 // WRITE BITMAP
